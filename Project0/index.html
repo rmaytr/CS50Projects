@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="googlestyles.css" />
+    <link rel="icon" href="images/gicon.png" />
+  </head>
+
+  <body>
+    <div class="header">
+      <button type="button">
+        <a href="imagesearch.html">Image search</a>
+      </button>
+      <button type="button">
+        <a href="advancedsearch.html">Advanced Search</a>
+      </button>
+    </div>
+
+    <section class="search">
+      <div class="main">
+        <img src="images/googleLogo2.jpg" class="gglLogo" />
+        <div class="mainsearch">
+          <form action="https://www.google.com/search">
+            <img src="images/searchIcon2.png" class="searchIcon" />
+            <div class="searchfield">
+              <span class="tooltip">Search</span>
+              <input type="text" name="q" value="" class="searchbar" />
+            </div>
+
+            <div class="AsearchIcon">
+              <a class="AdvancedSearchtooltip">Advanced Search</a>
+              <a href="advancedsearch.html">
+                <img src="images/asSearch.png" class="ASIcon" />
+              </a>
+            </div>
+
+            <div class="IMGsearchIcon">
+              <a class="IMGsearchtooltip">Image Search</a>
+              <a href="imagesearch.html">
+                <img src="images/IMGsearchIcon.png" class="ImageSearchIcon" />
+              </a>
+            </div>
+
+            <div class="searchbuttons">
+              <input type="submit" value="Google Search" class="actionbutton" />
+              <input
+                type="submit"
+                class="actionbutton"
+                name="btnI"
+                value="I'm Feeling Lucky"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
