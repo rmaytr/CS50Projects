@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+div.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 30px;
+    gap: 15px;
+}
+
+div.header a {
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 24px;
+    color: black;
+}
+
+div.header a:hover {
+    opacity: 0.7;
+}
+
+div.header a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+div.header button {
+    background-color: #f8f9fa;
+    padding: 8px;
+    border: none;
+}
+
+div.header button:hover {
+    border: 0.2px solid lightgrey;
+}
+
+
+div.main {
+    display: grid;
+    place-items: center; 
+    height: 28vh;
+}
+
+.main .gglLogo {
+    display: block;
+    margin: 0px, auto;
+    margin-top: 14vh;
+}
+
+.mainsearch {
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 12px;
+    width: 600px;
+}
+
+div.mainsearch input[type="text"] {
+    display: block;
+    margin-left: 5px;
+    border: 0.2px solid lightgrey;
+    outline: none;
+    font-size: 16px;
+    font-style: Roboto;
+    margin-top: 12px;
+    padding: 12px;
+    padding-left: 45px;
+    padding-right: 85px;
+    border-radius: 80px;
+    width: 75%;
+}
+
+.mainsearch .searchIcon {
+    position: absolute;
+    width: 20px;
+    opacity: 0.5;
+    top: 24px;
+    left: 18px;
+
+}
+
+.mainsearch .GoogleSearchIcon {
+    position: absolute;
+    width: 30px;
+    opacity: 0.5;
+    top: 18px;
+    right: 30px;
+}
+
+.mainsearch .ASIcon {
+    position: absolute;
+    width: 30px;
+    opacity: 0.5;
+    top: 18px;
+    right: 64px;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 45px;
+  height: 15px;
+  font-size: 14px;
+  font-style: Roboto;
+  background-color: rgb(36, 35, 35);
+  color: #dbd4d4;
+  text-align: center;
+  padding: 5px 5px;
+  border: 0.5px solid;
+  border-color: #b3b3b3;
+  border-radius: 0px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.searchfield:hover .tooltip {
+    visibility: visible;
+}
+
+
+
+.actionbutton {
+    padding: 10px 15px;
+    border: none;
+    display: inline-block;
+    background-color: #f8f9fa;
+    margin-right: 10px;
+    margin-top: 20px;
+    outline: none;
+    text-align: center;
+    height: 35px;
+}
+
+
+.actionbutton:hover {
+    opacity: 0.7;
+    border: 0.2px solid lightgrey;
+}
+
+div.searchbuttons {
+    width: 600px;
+    align-items: center;
+    display: inline-block;
+}
+
+.main .gglImageLogo {
+    display: block;
+    margin: 0px, auto;
+    margin-top: 15.5vh;
+}
