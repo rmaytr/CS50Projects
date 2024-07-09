@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="advancedsearch.css" />
+    <link rel="icon" href="images/gicon.png" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="GoBackGglIcon">
+        <a href="index.html">
+          <img src="images/GoogleLogo2.jpg" class="GglIcon" />
+        </a>
+      </div>
+      <button type="button" class="GoBackButton">
+        <a href="index.html">Go Back</a>
+      </button>
+    </div>
+
+    <section class="Advanced_Search">
+      <div class="TitleBar">
+        <h1 class="TitleAS">Advanced Search</h1>
+      </div>
+
+      <div class="HeaderLine">
+        <span>Find pages with...</span>
+        <span class="ToDo">To do this in the search box</span>
+      </div>
+
+      <form action="https://www.google.com/search">
+        <div class="Box-1">
+          <div class="allwords">
+            <span class="leftside">all these words: </span>
+            <input type="text" value="" name="as_q" />
+            <span class="rightside-1"> Type the important words: </span>
+            <span class="rightside-2"> tricolor rat terrier</span>
+          </div>
+
+          <div class="exactword">
+            <span class="leftside">this exact word or phrase: </span>
+            <input type="text" value="" name="as_epq" />
+            <span class="rightside-1"> Put exact words in quotes: </span>
+            <span class="rightside-2"> "rat terrier"</span>
+          </div>
+
+          <div class="anywords">
+            <span class="leftside">any of these words: </span>
+            <input type="text" value="" name="as_oq" />
+            <span class="rightside-1">
+              Type OR between all the words you want:
+            </span>
+            <span class="rightside-2"> miniature OR standard</span>
+          </div>
+
+          <div class="nonewords">
+            <span class="leftside">none of these words: </span>
+            <input type="text" value="" name="as_eq" />
+            <div class="text-rightside">
+              <span class="rightside-1">
+                Put a minus sign just before words you don't want:
+              </span>
+              <span class="rightside-2"> -rodent, -"Jack Russell"</span>
+            </div>
+          </div>
+
+          <div class="numbers">
+            <span class="leftside">numbers ranging from: </span>
+            <input type="text" value="" name="as_nlo" class="input1" />
+            <span class="leftside_sp"> to </span>
+            <input type="text" value="" name="as_nhi" class="input2" />
+            <div class="text-rightside-numbers">
+              <span class="rightside-1">
+                Put 2 periods between the numbers and add a unit of measure:
+              </span>
+              <span class="rightside-2">
+                10..35 lb, $300..$500, 2010..2011</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="Box-2">
+          <div class="HeaderLine2">
+            <span>Then narrow your results by...</span>
+          </div>
+
+          <div class="language">
+            <span class="leftside">language: </span>
+            <select name="lr" size="1">
+              <option class="listoptions" value="">any language</option>
+              <option class="listoptions" value="lang_af">Afrikaans</option>
+              <option class="listoptions" value="lang_ar">Arabic</option>
+              <option class="listoptions" value="lang_hy">Armenian</option>
+              <option class="listoptions" value="lang_be">Belarusian</option>
+              <option class="listoptions" value="lang_bg">Bulgarian</option>
+              <option class="listoptions" value="lang_ca">Catalan</option>
+              <option class="listoptions" value="lang_zh-CN">
+                Chinese (Simplified)
+              </option>
+              <option class="listoptions" value="lang_zh-TW">
+                Chinese (Traditional)
+              </option>
+              <option class="listoptions" value="lang_hr">Croatian</option>
+              <option class="listoptions" value="lang_cs">Czech</option>
+              <option class="listoptions" value="lang_da">Danish</option>
+              <option class="listoptions" value="lang_nl">Dutch</option>
+              <option class="listoptions" value="lang_en">English</option>
+              <option class="listoptions" value="lang_eo">Esperanto</option>
+              <option class="listoptions" value="lang_et">Estonian</option>
+              <option class="listoptions" value="lang_tl">Filipino</option>
+              <option class="listoptions" value="lang_fi">Finnish</option>
+              <option class="listoptions" value="lang_fr">French</option>
+              <option class="listoptions" value="lang_de">German</option>
+              <option class="listoptions" value="lang_el">Greek</option>
+              <option class="listoptions" value="lang_iw">Hebrew</option>
+              <option class="listoptions" value="lang_hi">Hindi</option>
+              <option class="listoptions" value="lang_hu">Hungarian</option>
+              <option class="listoptions" value="lang_is">Icelandic</option>
+              <option class="listoptions" value="lang_id">Indonesian</option>
+              <option class="listoptions" value="lang_it">Italian</option>
+              <option class="listoptions" value="lang_ja">Japanese</option>
+              <option class="listoptions" value="lang_ko">Korean</option>
+              <option class="listoptions" value="lang_lv">Latvian</option>
+              <option class="listoptions" value="lang_lt">Lithuanian</option>
+              <option class="listoptions" value="lang_no">Norwegian</option>
+              <option class="listoptions" value="lang_fa">Persian</option>
+              <option class="listoptions" value="lang_pl">Polish</option>
+              <option class="listoptions" value="lang_pt">Portuguese</option>
+              <option class="listoptions" value="lang_ro">Romanian</option>
+              <option class="listoptions" value="lang_ru">Russian</option>
+              <option class="listoptions" value="lang_sr">Serbian</option>
+              <option class="listoptions" value="lang_sk">Slovak</option>
+              <option class="listoptions" value="lang_sl">Slovenian</option>
+              <option class="listoptions" value="lang_es">Spanish</option>
+              <option class="listoptions" value="lang_sw">Swahili</option>
+              <option class="listoptions" value="lang_sv">Swedish</option>
+              <option class="listoptions" value="lang_th">Thai</option>
+              <option class="listoptions" value="lang_tr">Turkish</option>
+              <option class="listoptions" value="lang_uk">Ukrainian</option>
+              <option class="listoptions" value="lang_vi">Vietnamese</option>
+            </select>
+            <span class="rightside-1">
+              Find pages in the language you select.
+            </span>
+          </div>
+
+          <div class="region">
+            <span class="leftside">region: </span>
+            <select name="cr" size="1">
+              <option class="listoptions" value="" id=":1c">
+                <div class="divoptions">any region</div>
+              </option>
+              <option class="listoptions" value="countryAF" id=":1d">
+                <div class="divoptions">Afghanistan</div>
+              </option>
+              <option class="listoptions" value="countryAL" id=":1e">
+                <div class="divoptions">Albania</div>
+              </option>
+              <option class="listoptions" value="countryDZ" id=":1f">
+                <div class="divoptions">Algeria</div>
+              </option>
+              <option class="listoptions" value="countryAS" id=":1g">
+                <div class="divoptions">American Samoa</div>
+              </option>
+              <option class="listoptions" value="countryAD" id=":1h">
+                <div class="divoptions">Andorra</div>
+              </option>
+              <option class="listoptions" value="countryAO" id=":1i">
+                <div class="divoptions">Angola</div>
+              </option>
+              <option class="listoptions" value="countryAI" id=":1j">
+                <div class="divoptions">Anguilla</div>
+              </option>
+              <option class="listoptions" value="countryAQ" id=":1k">
+                <div class="divoptions">Antarctica</div>
+              </option>
+              <option class="listoptions" value="countryAG" id=":1l">
+                <div class="divoptions">Antigua &amp; Barbuda</div>
+              </option>
+              <option class="listoptions" value="countryAR" id=":1m">
+                <div class="divoptions">Argentina</div>
+              </option>
+              <option class="listoptions" value="countryAM" id=":1n">
+                <div class="divoptions">Armenia</div>
+              </option>
+              <option class="listoptions" value="countryAW" id=":1o">
+                <div class="divoptions">Aruba</div>
+              </option>
+              <option class="listoptions" value="countryAU" id=":1p">
+                <div class="divoptions">Australia</div>
+              </option>
+              <option class="listoptions" value="countryAT" id=":1q">
+                <div class="divoptions">Austria</div>
+              </option>
+              <option class="listoptions" value="countryAZ" id=":1r">
+                <div class="divoptions">Azerbaijan</div>
+              </option>
+              <option class="listoptions" value="countryBS" id=":1s">
+                <div class="divoptions">Bahamas</div>
+              </option>
+              <option class="listoptions" value="countryBH" id=":1t">
+                <div class="divoptions">Bahrain</div>
+              </option>
+              <option class="listoptions" value="countryBD" id=":1u">
+                <div class="divoptions">Bangladesh</div>
+              </option>
+              <option class="listoptions" value="countryBB" id=":1v">
+                <div class="divoptions">Barbados</div>
+              </option>
+              <option class="listoptions" value="countryBY" id=":1w">
+                <div class="divoptions">Belarus</div>
+              </option>
+              <option class="listoptions" value="countryBE" id=":1x">
+                <div class="divoptions">Belgium</div>
+              </option>
+              <option class="listoptions" value="countryBZ" id=":1y">
+                <div class="divoptions">Belize</div>
+              </option>
+              <option class="listoptions" value="countryBJ" id=":1z">
+                <div class="divoptions">Benin</div>
+              </option>
+              <option class="listoptions" value="countryBM" id=":20">
+                <div class="divoptions">Bermuda</div>
+              </option>
+              <option class="listoptions" value="countryBT" id=":21">
+                <div class="divoptions">Bhutan</div>
+              </option>
+              <option class="listoptions" value="countryBO" id=":22">
+                <div class="divoptions">Bolivia</div>
+              </option>
+              <option class="listoptions" value="countryBA" id=":23">
+                <div class="divoptions">Bosnia &amp; Herzegovina</div>
+              </option>
+              <option class="listoptions" value="countryBW" id=":24">
+                <div class="divoptions">Botswana</div>
+              </option>
+              <option class="listoptions" value="countryBV" id=":25">
+                <div class="divoptions">Bouvet Island</div>
+              </option>
+              <option class="listoptions" value="countryBR" id=":26">
+                <div class="divoptions">Brazil</div>
+              </option>
+              <option class="listoptions" value="countryIO" id=":27">
+                <div class="divoptions">British Indian Ocean Territory</div>
+              </option>
+              <option class="listoptions" value="countryVG" id=":28">
+                <div class="divoptions">British Virgin Islands</div>
+              </option>
+              <option class="listoptions" value="countryBN" id=":29">
+                <div class="divoptions">Brunei</div>
+              </option>
+              <option class="listoptions" value="countryBG" id=":2a">
+                <div class="divoptions">Bulgaria</div>
+              </option>
+              <option class="listoptions" value="countryBF" id=":2b">
+                <div class="divoptions">Burkina Faso</div>
+              </option>
+              <option class="listoptions" value="countryBI" id=":2c">
+                <div class="divoptions">Burundi</div>
+              </option>
+              <option class="listoptions" value="countryKH" id=":2d">
+                <div class="divoptions">Cambodia</div>
+              </option>
+              <option class="listoptions" value="countryCM" id=":2e">
+                <div class="divoptions">Cameroon</div>
+              </option>
+              <option class="listoptions" value="countryCA" id=":2f">
+                <div class="divoptions">Canada</div>
+              </option>
+              <option class="listoptions" value="countryCV" id=":2g">
+                <div class="divoptions">Cape Verde</div>
+              </option>
+              <option class="listoptions" value="countryKY" id=":2h">
+                <div class="divoptions">Cayman Islands</div>
+              </option>
+              <option class="listoptions" value="countryCF" id=":2i">
+                <div class="divoptions">Central African Republic</div>
+              </option>
+              <option class="listoptions" value="countryTD" id=":2j">
+                <div class="divoptions">Chad</div>
+              </option>
+              <option class="listoptions" value="countryCL" id=":2k">
+                <div class="divoptions">Chile</div>
+              </option>
+              <option class="listoptions" value="countryCN" id=":2l">
+                <div class="divoptions">China</div>
+              </option>
+              <option class="listoptions" value="countryCX" id=":2m">
+                <div class="divoptions">Christmas Island</div>
+              </option>
+              <option class="listoptions" value="countryCC" id=":2n">
+                <div class="divoptions">Cocos (Keeling) Islands</div>
+              </option>
+              <option class="listoptions" value="countryCO" id=":2o">
+                <div class="divoptions">Colombia</div>
+              </option>
+              <option class="listoptions" value="countryKM" id=":2p">
+                <div class="divoptions">Comoros</div>
+              </option>
+              <option class="listoptions" value="countryCG" id=":2q">
+                <div class="divoptions">Congo - Brazzaville</div>
+              </option>
+              <option class="listoptions" value="countryCD" id=":2r">
+                <div class="divoptions">Congo - Kinshasa</div>
+              </option>
+              <option class="listoptions" value="countryCK" id=":2s">
+                <div class="divoptions">Cook Islands</div>
+              </option>
+              <option class="listoptions" value="countryCR" id=":2t">
+                <div class="divoptions">Costa Rica</div>
+              </option>
+              <option class="listoptions" value="countryCI" id=":2u">
+                <div class="divoptions">Côte d’Ivoire</div>
+              </option>
+              <option class="listoptions" value="countryHR" id=":2v">
+                <div class="divoptions">Croatia</div>
+              </option>
+              <option class="listoptions" value="countryCU" id=":2w">
+                <div class="divoptions">Cuba</div>
+              </option>
+              <option class="listoptions" value="countryCY" id=":2x">
+                <div class="divoptions">Cyprus</div>
+              </option>
+              <option class="listoptions" value="countryCZ" id=":2y">
+                <div class="divoptions">Czechia</div>
+              </option>
+              <option class="listoptions" value="countryDK" id=":2z">
+                <div class="divoptions">Denmark</div>
+              </option>
+              <option class="listoptions" value="countryDJ" id=":30">
+                <div class="divoptions">Djibouti</div>
+              </option>
+              <option class="listoptions" value="countryDM" id=":31">
+                <div class="divoptions">Dominica</div>
+              </option>
+              <option class="listoptions" value="countryDO" id=":32">
+                <div class="divoptions">Dominican Republic</div>
+              </option>
+              <option class="listoptions" value="countryEC" id=":33">
+                <div class="divoptions">Ecuador</div>
+              </option>
+              <option class="listoptions" value="countryEG" id=":34">
+                <div class="divoptions">Egypt</div>
+              </option>
+              <option class="listoptions" value="countrySV" id=":35">
+                <div class="divoptions">El Salvador</div>
+              </option>
+              <option class="listoptions" value="countryGQ" id=":36">
+                <div class="divoptions">Equatorial Guinea</div>
+              </option>
+              <option class="listoptions" value="countryER" id=":37">
+                <div class="divoptions">Eritrea</div>
+              </option>
+              <option class="listoptions" value="countryEE" id=":38">
+                <div class="divoptions">Estonia</div>
+              </option>
+              <option class="listoptions" value="countrySZ" id=":39">
+                <div class="divoptions">Eswatini</div>
+              </option>
+              <option class="listoptions" value="countryET" id=":3a">
+                <div class="divoptions">Ethiopia</div>
+              </option>
+              <option class="listoptions" value="countryFK" id=":3b">
+                <div class="divoptions">Falkland Islands (Islas Malvinas)</div>
+              </option>
+              <option class="listoptions" value="countryFO" id=":3c">
+                <div class="divoptions">Faroe Islands</div>
+              </option>
+              <option class="listoptions" value="countryFJ" id=":3d">
+                <div class="divoptions">Fiji</div>
+              </option>
+              <option class="listoptions" value="countryFI" id=":3e">
+                <div class="divoptions">Finland</div>
+              </option>
+              <option class="listoptions" value="countryFR" id=":3f">
+                <div class="divoptions">France</div>
+              </option>
+              <option class="listoptions" value="countryGF" id=":3g">
+                <div class="divoptions">French Guiana</div>
+              </option>
+              <option class="listoptions" value="countryPF" id=":3h">
+                <div class="divoptions">French Polynesia</div>
+              </option>
+              <option class="listoptions" value="countryTF" id=":3i">
+                <div class="divoptions">French Southern Territories</div>
+              </option>
+              <option class="listoptions" value="countryGA" id=":3j">
+                <div class="divoptions">Gabon</div>
+              </option>
+              <option class="listoptions" value="countryGM" id=":3k">
+                <div class="divoptions">Gambia</div>
+              </option>
+              <option class="listoptions" value="countryGE" id=":3l">
+                <div class="divoptions">Georgia</div>
+              </option>
+              <option class="listoptions" value="countryDE" id=":3m">
+                <div class="divoptions">Germany</div>
+              </option>
+              <option class="listoptions" value="countryGH" id=":3n">
+                <div class="divoptions">Ghana</div>
+              </option>
+              <option class="listoptions" value="countryGI" id=":3o">
+                <div class="divoptions">Gibraltar</div>
+              </option>
+              <option class="listoptions" value="countryGR" id=":3p">
+                <div class="divoptions">Greece</div>
+              </option>
+              <option class="listoptions" value="countryGL" id=":3q">
+                <div class="divoptions">Greenland</div>
+              </option>
+              <option class="listoptions" value="countryGD" id=":3r">
+                <div class="divoptions">Grenada</div>
+              </option>
+              <option class="listoptions" value="countryGP" id=":3s">
+                <div class="divoptions">Guadeloupe</div>
+              </option>
+              <option class="listoptions" value="countryGU" id=":3t">
+                <div class="divoptions">Guam</div>
+              </option>
+              <option class="listoptions" value="countryGT" id=":3u">
+                <div class="divoptions">Guatemala</div>
+              </option>
+              <option class="listoptions" value="countryGN" id=":3v">
+                <div class="divoptions">Guinea</div>
+              </option>
+              <option class="listoptions" value="countryGW" id=":3w">
+                <div class="divoptions">Guinea-Bissau</div>
+              </option>
+              <option class="listoptions" value="countryGY" id=":3x">
+                <div class="divoptions">Guyana</div>
+              </option>
+              <option class="listoptions" value="countryHT" id=":3y">
+                <div class="divoptions">Haiti</div>
+              </option>
+              <option class="listoptions" value="countryHM" id=":3z">
+                <div class="divoptions">Heard &amp; McDonald Islands</div>
+              </option>
+              <option class="listoptions" value="countryHN" id=":40">
+                <div class="divoptions">Honduras</div>
+              </option>
+              <option class="listoptions" value="countryHK" id=":41">
+                <div class="divoptions">Hong Kong</div>
+              </option>
+              <option class="listoptions" value="countryHU" id=":42">
+                <div class="divoptions">Hungary</div>
+              </option>
+              <option class="listoptions" value="countryIS" id=":43">
+                <div class="divoptions">Iceland</div>
+              </option>
+              <option class="listoptions" value="countryIN" id=":44">
+                <div class="divoptions">India</div>
+              </option>
+              <option class="listoptions" value="countryID" id=":45">
+                <div class="divoptions">Indonesia</div>
+              </option>
+              <option class="listoptions" value="countryIR" id=":46">
+                <div class="divoptions">Iran</div>
+              </option>
+              <option class="listoptions" value="countryIQ" id=":47">
+                <div class="divoptions">Iraq</div>
+              </option>
+              <option class="listoptions" value="countryIE" id=":48">
+                <div class="divoptions">Ireland</div>
+              </option>
+              <option class="listoptions" value="countryIL" id=":49">
+                <div class="divoptions">Israel</div>
+              </option>
+              <option class="listoptions" value="countryIT" id=":4a">
+                <div class="divoptions">Italy</div>
+              </option>
+              <option class="listoptions" value="countryJM" id=":4b">
+                <div class="divoptions">Jamaica</div>
+              </option>
+              <option class="listoptions" value="countryJP" id=":4c">
+                <div class="divoptions">Japan</div>
+              </option>
+              <option class="listoptions" value="countryJO" id=":4d">
+                <div class="divoptions">Jordan</div>
+              </option>
+              <option class="listoptions" value="countryKZ" id=":4e">
+                <div class="divoptions">Kazakhstan</div>
+              </option>
+              <option class="listoptions" value="countryKE" id=":4f">
+                <div class="divoptions">Kenya</div>
+              </option>
+              <option class="listoptions" value="countryKI" id=":4g">
+                <div class="divoptions">Kiribati</div>
+              </option>
+              <option class="listoptions" value="countryKW" id=":4h">
+                <div class="divoptions">Kuwait</div>
+              </option>
+              <option class="listoptions" value="countryKG" id=":4i">
+                <div class="divoptions">Kyrgyzstan</div>
+              </option>
+              <option class="listoptions" value="countryLA" id=":4j">
+                <div class="divoptions">Laos</div>
+              </option>
+              <option class="listoptions" value="countryLV" id=":4k">
+                <div class="divoptions">Latvia</div>
+              </option>
+              <option class="listoptions" value="countryLB" id=":4l">
+                <div class="divoptions">Lebanon</div>
+              </option>
+              <option class="listoptions" value="countryLS" id=":4m">
+                <div class="divoptions">Lesotho</div>
+              </option>
+              <option class="listoptions" value="countryLR" id=":4n">
+                <div class="divoptions">Liberia</div>
+              </option>
+              <option class="listoptions" value="countryLY" id=":4o">
+                <div class="divoptions">Libya</div>
+              </option>
+              <option class="listoptions" value="countryLI" id=":4p">
+                <div class="divoptions">Liechtenstein</div>
+              </option>
+              <option class="listoptions" value="countryLT" id=":4q">
+                <div class="divoptions">Lithuania</div>
+              </option>
+              <option class="listoptions" value="countryLU" id=":4r">
+                <div class="divoptions">Luxembourg</div>
+              </option>
+              <option class="listoptions" value="countryMO" id=":4s">
+                <div class="divoptions">Macao</div>
+              </option>
+              <option class="listoptions" value="countryMG" id=":4t">
+                <div class="divoptions">Madagascar</div>
+              </option>
+              <option class="listoptions" value="countryMW" id=":4u">
+                <div class="divoptions">Malawi</div>
+              </option>
+              <option class="listoptions" value="countryMY" id=":4v">
+                <div class="divoptions">Malaysia</div>
+              </option>
+              <option class="listoptions" value="countryMV" id=":4w">
+                <div class="divoptions">Maldives</div>
+              </option>
+              <option class="listoptions" value="countryML" id=":4x">
+                <div class="divoptions">Mali</div>
+              </option>
+              <option class="listoptions" value="countryMT" id=":4y">
+                <div class="divoptions">Malta</div>
+              </option>
+              <option class="listoptions" value="countryMH" id=":4z">
+                <div class="divoptions">Marshall Islands</div>
+              </option>
+              <option class="listoptions" value="countryMQ" id=":50">
+                <div class="divoptions">Martinique</div>
+              </option>
+              <option class="listoptions" value="countryMR" id=":51">
+                <div class="divoptions">Mauritania</div>
+              </option>
+              <option class="listoptions" value="countryMU" id=":52">
+                <div class="divoptions">Mauritius</div>
+              </option>
+              <option class="listoptions" value="countryYT" id=":53">
+                <div class="divoptions">Mayotte</div>
+              </option>
+              <option class="listoptions" value="countryMX" id=":54">
+                <div class="divoptions">Mexico</div>
+              </option>
+              <option class="listoptions" value="countryFM" id=":55">
+                <div class="divoptions">Micronesia</div>
+              </option>
+              <option class="listoptions" value="countryMD" id=":56">
+                <div class="divoptions">Moldova</div>
+              </option>
+              <option class="listoptions" value="countryMC" id=":57">
+                <div class="divoptions">Monaco</div>
+              </option>
+              <option class="listoptions" value="countryMN" id=":58">
+                <div class="divoptions">Mongolia</div>
+              </option>
+              <option class="listoptions" value="countryMS" id=":59">
+                <div class="divoptions">Montserrat</div>
+              </option>
+              <option class="listoptions" value="countryMA" id=":5a">
+                <div class="divoptions">Morocco</div>
+              </option>
+              <option class="listoptions" value="countryMZ" id=":5b">
+                <div class="divoptions">Mozambique</div>
+              </option>
+              <option class="listoptions" value="countryMM" id=":5c">
+                <div class="divoptions">Myanmar (Burma)</div>
+              </option>
+              <option class="listoptions" value="countryNA" id=":5d">
+                <div class="divoptions">Namibia</div>
+              </option>
+              <option class="listoptions" value="countryNR" id=":5e">
+                <div class="divoptions">Nauru</div>
+              </option>
+              <option class="listoptions" value="countryNP" id=":5f">
+                <div class="divoptions">Nepal</div>
+              </option>
+              <option class="listoptions" value="countryNL" id=":5g">
+                <div class="divoptions">Netherlands</div>
+              </option>
+              <option class="listoptions" value="countryNC" id=":5h">
+                <div class="divoptions">New Caledonia</div>
+              </option>
+              <option class="listoptions" value="countryNZ" id=":5i">
+                <div class="divoptions">New Zealand</div>
+              </option>
+              <option class="listoptions" value="countryNI" id=":5j">
+                <div class="divoptions">Nicaragua</div>
+              </option>
+              <option class="listoptions" value="countryNE" id=":5k">
+                <div class="divoptions">Niger</div>
+              </option>
+              <option class="listoptions" value="countryNG" id=":5l">
+                <div class="divoptions">Nigeria</div>
+              </option>
+              <option class="listoptions" value="countryNU" id=":5m">
+                <div class="divoptions">Niue</div>
+              </option>
+              <option class="listoptions" value="countryNF" id=":5n">
+                <div class="divoptions">Norfolk Island</div>
+              </option>
+              <option class="listoptions" value="countryKP" id=":5o">
+                <div class="divoptions">North Korea</div>
+              </option>
+              <option class="listoptions" value="countryMK" id=":5p">
+                <div class="divoptions">North Macedonia</div>
+              </option>
+              <option class="listoptions" value="countryMP" id=":5q">
+                <div class="divoptions">Northern Mariana Islands</div>
+              </option>
+              <option class="listoptions" value="countryNO" id=":5r">
+                <div class="divoptions">Norway</div>
+              </option>
+              <option class="listoptions" value="countryOM" id=":5s">
+                <div class="divoptions">Oman</div>
+              </option>
+              <option class="listoptions" value="countryPK" id=":5t">
+                <div class="divoptions">Pakistan</div>
+              </option>
+              <option class="listoptions" value="countryPW" id=":5u">
+                <div class="divoptions">Palau</div>
+              </option>
+              <option class="listoptions" value="countryPS" id=":5v">
+                <div class="divoptions">Palestine</div>
+              </option>
+              <option class="listoptions" value="countryPA" id=":5w">
+                <div class="divoptions">Panama</div>
+              </option>
+              <option class="listoptions" value="countryPG" id=":5x">
+                <div class="divoptions">Papua New Guinea</div>
+              </option>
+              <option class="listoptions" value="countryPY" id=":5y">
+                <div class="divoptions">Paraguay</div>
+              </option>
+              <option class="listoptions" value="countryPE" id=":5z">
+                <div class="divoptions">Peru</div>
+              </option>
+              <option class="listoptions" value="countryPH" id=":60">
+                <div class="divoptions">Philippines</div>
+              </option>
+              <option class="listoptions" value="countryPN" id=":61">
+                <div class="divoptions">Pitcairn Islands</div>
+              </option>
+              <option class="listoptions" value="countryPL" id=":62">
+                <div class="divoptions">Poland</div>
+              </option>
+              <option class="listoptions" value="countryPT" id=":63">
+                <div class="divoptions">Portugal</div>
+              </option>
+              <option class="listoptions" value="countryPR" id=":64">
+                <div class="divoptions">Puerto Rico</div>
+              </option>
+              <option class="listoptions" value="countryQA" id=":65">
+                <div class="divoptions">Qatar</div>
+              </option>
+              <option class="listoptions" value="countryRE" id=":66">
+                <div class="divoptions">Réunion</div>
+              </option>
+              <option class="listoptions" value="countryRO" id=":67">
+                <div class="divoptions">Romania</div>
+              </option>
+              <option class="listoptions" value="countryRU" id=":68">
+                <div class="divoptions">Russia</div>
+              </option>
+              <option class="listoptions" value="countryRW" id=":69">
+                <div class="divoptions">Rwanda</div>
+              </option>
+              <option class="listoptions" value="countryWS" id=":6a">
+                <div class="divoptions">Samoa</div>
+              </option>
+              <option class="listoptions" value="countrySM" id=":6b">
+                <div class="divoptions">San Marino</div>
+              </option>
+              <option class="listoptions" value="countryST" id=":6c">
+                <div class="divoptions">São Tomé &amp; Príncipe</div>
+              </option>
+              <option class="listoptions" value="countrySA" id=":6d">
+                <div class="divoptions">Saudi Arabia</div>
+              </option>
+              <option class="listoptions" value="countrySN" id=":6e">
+                <div class="divoptions">Senegal</div>
+              </option>
+              <option class="listoptions" value="countryRS" id=":6f">
+                <div class="divoptions">Serbia</div>
+              </option>
+              <option class="listoptions" value="countrySC" id=":6g">
+                <div class="divoptions">Seychelles</div>
+              </option>
+              <option class="listoptions" value="countrySL" id=":6h">
+                <div class="divoptions">Sierra Leone</div>
+              </option>
+              <option class="listoptions" value="countrySG" id=":6i">
+                <div class="divoptions">Singapore</div>
+              </option>
+              <option class="listoptions" value="countrySK" id=":6j">
+                <div class="divoptions">Slovakia</div>
+              </option>
+              <option class="listoptions" value="countrySI" id=":6k">
+                <div class="divoptions">Slovenia</div>
+              </option>
+              <option class="listoptions" value="countrySB" id=":6l">
+                <div class="divoptions">Solomon Islands</div>
+              </option>
+              <option class="listoptions" value="countrySO" id=":6m">
+                <div class="divoptions">Somalia</div>
+              </option>
+              <option class="listoptions" value="countryZA" id=":6n">
+                <div class="divoptions">South Africa</div>
+              </option>
+              <option class="listoptions" value="countryGS" id=":6o">
+                <div class="divoptions">
+                  South Georgia &amp; South Sandwich Islands
+                </div>
+              </option>
+              <option class="listoptions" value="countryKR" id=":6p">
+                <div class="divoptions">South Korea</div>
+              </option>
+              <option class="listoptions" value="countryES" id=":6q">
+                <div class="divoptions">Spain</div>
+              </option>
+              <option class="listoptions" value="countryLK" id=":6r">
+                <div class="divoptions">Sri Lanka</div>
+              </option>
+              <option class="listoptions" value="countrySH" id=":6s">
+                <div class="divoptions">St. Helena</div>
+              </option>
+              <option class="listoptions" value="countryKN" id=":6t">
+                <div class="divoptions">St. Kitts &amp; Nevis</div>
+              </option>
+              <option class="listoptions" value="countryLC" id=":6u">
+                <div class="divoptions">St. Lucia</div>
+              </option>
+              <option class="listoptions" value="countryPM" id=":6v">
+                <div class="divoptions">St. Pierre &amp; Miquelon</div>
+              </option>
+              <option class="listoptions" value="countryVC" id=":6w">
+                <div class="divoptions">St. Vincent &amp; Grenadines</div>
+              </option>
+              <option class="listoptions" value="countrySD" id=":6x">
+                <div class="divoptions">Sudan</div>
+              </option>
+              <option class="listoptions" value="countrySR" id=":6y">
+                <div class="divoptions">Suriname</div>
+              </option>
+              <option class="listoptions" value="countrySJ" id=":6z">
+                <div class="divoptions">Svalbard &amp; Jan Mayen</div>
+              </option>
+              <option class="listoptions" value="countrySE" id=":70">
+                <div class="divoptions">Sweden</div>
+              </option>
+              <option class="listoptions" value="countryCH" id=":71">
+                <div class="divoptions">Switzerland</div>
+              </option>
+              <option class="listoptions" value="countrySY" id=":72">
+                <div class="divoptions">Syria</div>
+              </option>
+              <option class="listoptions" value="countryTW" id=":73">
+                <div class="divoptions">Taiwan</div>
+              </option>
+              <option class="listoptions" value="countryTJ" id=":74">
+                <div class="divoptions">Tajikistan</div>
+              </option>
+              <option class="listoptions" value="countryTZ" id=":75">
+                <div class="divoptions">Tanzania</div>
+              </option>
+              <option class="listoptions" value="countryTH" id=":76">
+                <div class="divoptions">Thailand</div>
+              </option>
+              <option class="listoptions" value="countryTG" id=":77">
+                <div class="divoptions">Togo</div>
+              </option>
+              <option class="listoptions" value="countryTK" id=":78">
+                <div class="divoptions">Tokelau</div>
+              </option>
+              <option class="listoptions" value="countryTO" id=":79">
+                <div class="divoptions">Tonga</div>
+              </option>
+              <option class="listoptions" value="countryTT" id=":7a">
+                <div class="divoptions">Trinidad &amp; Tobago</div>
+              </option>
+              <option class="listoptions" value="countryTN" id=":7b">
+                <div class="divoptions">Tunisia</div>
+              </option>
+              <option class="listoptions" value="countryTR" id=":7c">
+                <div class="divoptions">Türkiye</div>
+              </option>
+              <option class="listoptions" value="countryTM" id=":7d">
+                <div class="divoptions">Turkmenistan</div>
+              </option>
+              <option class="listoptions" value="countryTC" id=":7e">
+                <div class="divoptions">Turks &amp; Caicos Islands</div>
+              </option>
+              <option class="listoptions" value="countryTV" id=":7f">
+                <div class="divoptions">Tuvalu</div>
+              </option>
+              <option class="listoptions" value="countryUM" id=":7g">
+                <div class="divoptions">U.S. Outlying Islands</div>
+              </option>
+              <option class="listoptions" value="countryVI" id=":7h">
+                <div class="divoptions">U.S. Virgin Islands</div>
+              </option>
+              <option class="listoptions" value="countryUG" id=":7i">
+                <div class="divoptions">Uganda</div>
+              </option>
+              <option class="listoptions" value="countryUA" id=":7j">
+                <div class="divoptions">Ukraine</div>
+              </option>
+              <option class="listoptions" value="countryAE" id=":7k">
+                <div class="divoptions">United Arab Emirates</div>
+              </option>
+              <option class="listoptions" value="countryGB" id=":7l">
+                <div class="divoptions">United Kingdom</div>
+              </option>
+              <option class="listoptions" value="countryUS" id=":7m">
+                <div class="divoptions">United States</div>
+              </option>
+              <option class="listoptions" value="countryUY" id=":7n">
+                <div class="divoptions">Uruguay</div>
+              </option>
+              <option class="listoptions" value="countryUZ" id=":7o">
+                <div class="divoptions">Uzbekistan</div>
+              </option>
+              <option class="listoptions" value="countryVU" id=":7p">
+                <div class="divoptions">Vanuatu</div>
+              </option>
+              <option class="listoptions" value="countryVA" id=":7q">
+                <div class="divoptions">Vatican City</div>
+              </option>
+              <option class="listoptions" value="countryVE" id=":7r">
+                <div class="divoptions">Venezuela</div>
+              </option>
+              <option class="listoptions" value="countryVN" id=":7s">
+                <div class="divoptions">Vietnam</div>
+              </option>
+              <option class="listoptions" value="countryWF" id=":7t">
+                <div class="divoptions">Wallis &amp; Futuna</div>
+              </option>
+              <option class="listoptions" value="countryEH" id=":7u">
+                <div class="divoptions">Western Sahara</div>
+              </option>
+              <option class="listoptions" value="countryYE" id=":7v">
+                <div class="divoptions">Yemen</div>
+              </option>
+              <option class="listoptions" value="countryZM" id=":7w">
+                <div class="divoptions">Zambia</div>
+              </option>
+              <option class="listoptions" value="countryZW" id=":7x">
+                <div class="divoptions">Zimbabwe</div>
+              </option>
+            </select>
+            <span class="rightside-1">
+              Find pages published in a particular region.
+            </span>
+          </div>
+
+          <div class="time">
+            <span class="leftside">last update: </span>
+            <select name="as_qdr" size="1">
+              <option class="listoptions" value="all">anytime</option>
+              <option class="listoptions" value="d">past 24 hours</option>
+              <option class="listoptions" value="w">past week</option>
+              <option class="listoptions" value="m">past month</option>
+              <option class="listoptions" value="y">past year</option>
+            </select>
+            <span class="rightside-1">
+              Find pages updated within the time you specify.
+            </span>
+          </div>
+
+          <div class="site-domain">
+            <span class="leftside">site or domain: </span>
+            <input type="text" value="" name="as_sitesearch" />
+
+            <div class="text-rightside2">
+              <span class="rightside-1">
+                Search one site (like wikipedia.org ) or limit your results to a
+                domain like .edu, .org or .gov
+              </span>
+            </div>
+          </div>
+
+          <div class="terms">
+            <span class="leftside">terms appearing: </span>
+            <select name="as_occt" size="1">
+              <option class="listoptions" value="any">
+                anywhere in the page
+              </option>
+              <option class="listoptions" value="title">
+                in the title of the page
+              </option>
+              <option class="listoptions" value="body">
+                in the text of the page
+              </option>
+              <option class="listoptions" value="url">
+                in the URL of the page
+              </option>
+              <option class="listoptions" value="links">
+                in links to the page
+              </option>
+            </select>
+
+            <div class="text-rightside2">
+              <span class="rightside-1">
+                Search for terms in the whole page, page title, or web address,
+                or links to the page you're looking for.
+              </span>
+            </div>
+          </div>
+
+          <div class="file-type">
+            <span class="leftside">file type: </span>
+            <select name="as_filetype" size="1">
+              <option class="listoptions" value="">any format</option>
+              <option class="listoptions" value="pdf">
+                Adobe Acrobat PDF (.pdf)
+              </option>
+              <option class="listoptions" value="ps">
+                Adobe Postscript (.ps)
+              </option>
+              <option class="listoptions" value="dwf">
+                Autodesk DWF (.dwf)
+              </option>
+              <option class="listoptions" value="kml">
+                Google Earth KML (.kml)
+              </option>
+              <option class="listoptions" value="kmz">
+                Google Earth KMZ (.kmz)
+              </option>
+              <option class="listoptions" value="xls">
+                Microsoft Excel (.xls)
+              </option>
+              <option class="listoptions" value="ppt">
+                Microsoft Powerpoint (.ppt)
+              </option>
+              <option class="listoptions" value="doc">
+                Microsoft Word (.doc)
+              </option>
+              <option class="listoptions" value="rtf">
+                Rich Text Format (.rtf)
+              </option>
+              <option class="listoptions" value="swf">
+                Shockwave Flash (.swf)
+              </option>
+            </select>
+            <span class="rightside-1">
+              Find pages in the format you prefer.
+            </span>
+          </div>
+
+          <div class="usage-rights">
+            <a
+              class="leftside"
+              href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en"
+              >usage rights:
+            </a>
+            <select name="tbs" size="1">
+              <option class="listoptions" value="">
+                not filtered by license
+              </option>
+              <option class="listoptions" value="f">
+                free to use or share
+              </option>
+              <option class="listoptions" value="fc">
+                free to use or share, even commercially
+              </option>
+              <option class="listoptions" value="fm">
+                free to use share or modify
+              </option>
+              <option class="listoptions" value="fmc">
+                free to use, share or modify, even commercially
+              </option>
+            </select>
+            <span class="rightside-1">
+              Find pages you are free to use yourself.
+            </span>
+          </div>
+
+          <div class="AdvancedSearchSubmitButton">
+            <button type="submit" class="ASSubmitButton">
+              Advanced Search
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
